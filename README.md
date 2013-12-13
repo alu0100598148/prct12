@@ -1,7 +1,10 @@
 # MathsMatrixUllEtsiiLppT41
 
 La jerarquía de clases para implementar las matrices densas y dispersas será:
-Una clase base Matriz de la cual heredarán de ella dos clases, MatrizDispersa y MatrizDensa. 
+Una clase base Matriz de la cual heredarán de ella dos clases, MatrizDispersa y MatrizDensa.
+
+Informe de dependencias ofrecido por Gemnasium:
+https://gemnasium.com/alu0100598148/prct12 
 
 ## Installation
 
