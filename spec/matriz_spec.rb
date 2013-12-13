@@ -126,5 +126,13 @@ describe Matriz do
       end
       @dsl3.calcular.should == [[2,4],[4,2]]
     end
+    it "Error DSL" do
+      @errorDSL = MatrizDSL.new("Error") do
+        operando([[2,7],[3,2]])
+        operando([[1,3],[4,1]])
+      end
+      @errorDSL.calcular.should == nil
+    end
   end
+
 end
