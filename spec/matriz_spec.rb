@@ -112,5 +112,12 @@ describe Matriz do
       end
       @dsl1.calcular.should == [[2,2],[2,2]]
     end
+    it "Resta con el DSL" do
+      @dsl2 = MatrizDSL.new("resta") do
+        operando([[2,7],[3,2]])
+        operando([[1,3],[4,1]])
+      end
+      @dsl2.calcular.should == [[1,4],[-1,1]]
+    end
   end
 end
