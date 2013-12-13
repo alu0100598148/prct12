@@ -41,6 +41,9 @@ class MatrizDSL < Matriz
       when :suma
         @resultado = @operandos[0]+@operandos[1]
         @resultado.matriz
+      when :resta
+        @resultado = @operandos[0]-@operandos[1]
+        @resultado.matriz
       else
         puts "Tipo de operacion incorrecta", @operacion
       end
