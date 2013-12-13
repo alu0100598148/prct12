@@ -2,6 +2,7 @@ require 'matriz'
 require 'matrizDispersa'
 require 'matrizDensa'
 require 'racional'
+require 'matrizDSL'
 
 describe Matriz do
   
@@ -105,11 +106,11 @@ describe Matriz do
 
   describe "Prueba MatrizDSL" do
     it "Suma con el DSL" do
-      @DSL1 = MatrizDSL.new("suma") do
+      @dsl1 = MatrizDSL.new("suma") do
         operando([[1,1],[1,1]])
         operando([[1,1],[1,1]])
       end
-      @DSL1.calcular.should == [[2,2],[2,2]]
+      @dsl1.calcular.should == [[2,2],[2,2]]
     end
-
+  end
 end

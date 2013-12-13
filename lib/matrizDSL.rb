@@ -31,4 +31,18 @@ class MatrizDSL < Matriz
         end
       end
   end
+  
+  def operando(mat)
+    @operandos << MatrizDensa.new(mat)
+  end
+
+  def calcular
+    case @operacion
+      when :suma
+        @resultado = @operandos[0]+@operandos[1]
+        @resultado.matriz
+      else
+        puts "Tipo de operacion incorrecta", @operacion
+      end
+  end
 end
