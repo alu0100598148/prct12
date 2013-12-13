@@ -102,4 +102,14 @@ describe Matriz do
       ((@m3.encontrar {|e| e*e > 6}).should == [1,0])
     end
   end
+
+  describe "Prueba MatrizDSL" do
+    it "Suma con el DSL" do
+      @DSL1 = MatrizDSL.new("suma") do
+        operando([[1,1],[1,1]])
+        operando([[1,1],[1,1]])
+      end
+      @DSL1.calcular.should == [[2,2],[2,2]]
+    end
+
 end
